@@ -1,0 +1,21 @@
+*{
+   background-color: rgb(213, 145, 245);  
+   font-size: 80px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: rgb(139, 0, 109);
+   font-size: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkcyan;
+    text-align: right;
+    color: purple;
+    background-color: hsl(37, 86%, 45%);
+    font-size: 40px;
+    font-family: "Underdog", system-ui;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    font-size: 40px;
+    font-family: "Underdog", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
