@@ -1,0 +1,56 @@
+
+
+/*h1{
+    text-align: right;
+    color: red;
+}
+
+#tiUno{
+    text-align: center;
+}
+
+*/
+/*
+.tituloUno{
+    text-align: center;
+}
+
+.tituloDos{
+    color: blue;
+}*/
+
+/*
+h1{
+ color: red;
+ /*text-align: center;*
+}
+
+h2{
+    color: blue;
+    /*text-align: center;*
+}
+
+p{
+    color: blueviolet;
+    /*text-align: center;*
+}
+
+h1, h2, p{
+    text-align: right;
+}
+*/
+
+
+.titulo{
+    text-align: right;
+}
+
+p.titulo{
+    background-color: red;
+}
+
+p,h1.fondoTexto{
+    background-color: red;
+    color: teal;
+}
+
