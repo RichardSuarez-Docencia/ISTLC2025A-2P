@@ -1,0 +1,104 @@
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .imagenNav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #333;
+        }
+
+        .imagenNav img{
+            width: 15%;
+            margin: 5px;
+            background-color: white;
+            border-radius: 4px;
+        }
+
+        .limpiar{
+            clear:both;
+            padding-top: 100px;
+        }
+
+        .limpiar.divContenedor{
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .limpiar ul{
+           border-top: 3px solid #333;
+           border-bottom: 3px solid #333; 
+           padding: 5px;
+           text-align: center;
+        }
+
+        .limpiar ul li{
+           display: inline;
+           margin: 8px;
+        }
+
+        .limpiar ul li a{
+           text-decoration: none;
+           color: black;
+        }
+
+        .limpiar ul li a:hover{
+           background-color: rgb(119, 119, 119);
+           color: white;
+           padding: 8px;
+           margin-right: 10px;
+        }
+
+        .seccionPrincipal{
+            margin-left: 20px ;
+        }
+
+        .seccionPrincipal h1{
+            border-left: 8px solid red;
+            padding-left: 8px;
+            clear: both;
+        }
+
+        .secciones{
+            margin: 20px;
+            width: 25%;
+            float: left;
+            padding-left: 30px;
+        }
+
+        .secciones img{
+            width: 100%;
+            box-shadow: 5px 5px 15px #333;
+            transition: transform 0.3s ease;
+        }
+
+        .secciones img:hover{
+           transform:scale(1.1);
+        }
+
+        .poppins-bold {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            }
+
+            .roboto-mono {
+                font-family: "Roboto", sans-serif;
+                /*font-optical-sizing: auto;*/
+                font-weight: 500;
+                font-style: normal;
+                }
+
+                .footer{
+                    clear: both;
+                    background-color: red;
+                    color: white;
+                    font-size: 7em;
+                }
