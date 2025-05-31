@@ -1,9 +1,9 @@
 let nombreA = "Juan"; //String
 let edad= 21;        //number
-console.log(typeof nombre);
+console.log(typeof nombreA);
 console.log(typeof edad);
-console.log(`Mi nombre es ${nombre} y mi edad es ${edad} años edad`);
-console.log("Mi nombre es "+nombre + "y tengo "+ edad +"años de edad");
+console.log(`Mi nombre es ${nombreA} y mi edad es ${edad} años edad`);
+console.log("Mi nombre es "+nombreA + " y tengo "+ edad +" años de edad");
 
 let persona = {
     nombre:"Luis",
@@ -12,7 +12,7 @@ let persona = {
     telefono:"0951489751"
 }
 
-console.log(typeof persona);
+console.log( persona);
 console.log(`Mi nombre es ${persona.nombre}`);
 console.log(`Mi apellido es ${persona.apellido}`);
 console.log(`Mi Edad es ${persona.edad}`);
@@ -28,7 +28,7 @@ function saludar() {
     return "Hola Mundo JS";
 }
 
-console.log(typeof saludar);
+console.log(typeof saludar());
 
 
 class Animal {
@@ -42,20 +42,21 @@ suma = "dsdsds"
 
 console.log(typeof suma);
 
-let y = null;
+let y = null; //Ausencia de valor
 console.log(typeof y);
 
-
+// var, let y const -> tipo de declaracion de variable
 var nombre = "Ana"; 
 var nombre = "Pedro"; //  Permitido (pero confuso) nombre = "Ana";
 console.log(nombre); // "Ana"
 
 let apellidoA = "Ana"; 
- apellidoA = "Pedro"; //  Permitido (pero confuso) nombre = "Ana";
+apellidoA = "Pedro"; //  Permitido (pero confuso) nombre = "Ana";
 console.log(apellidoA);
 
 const PI = 3.14159; // const PI = 3.14; //Error: no se puede redeclarar // PI = 3.14; //Error: no se puede cambiar 
- //PI = 3.1698;
+//PI=4;
+//PI = 3.1698;
 console.log(PI); // 3.14159
 
 

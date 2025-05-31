@@ -27,3 +27,13 @@ console.log(operadorMenosIgual);
 let operadorMultiplicacionIgual= 25;
 operadorMultiplicacionIgual *= 3;
 console.log(operadorMultiplicacionIgual);
+
+
+let decrementar = 5;
+decrementar--;
+
+let incrementar = 5;
+incrementar++;
+console.log(incrementar);
+
+console.log(decrementar);
