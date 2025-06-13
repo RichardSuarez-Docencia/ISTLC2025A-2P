@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="script.js" defer></script> EXTERNA -->
+     <style>
+        .azul{
+            color: blue;
+        }
+     </style>
+</head>
+<body>
+   <!--
+   <p class="azul">Parrafo 1</p>
+   <p class="azul">Parrafo 2</p>
+   <b class="azul">Parrafo 3</b>
+-->
+   <form id="formulario">
+        <label for="">Nombre</label>
+        <input type="text" id="nombre">
+        <br />
+        <label for="">Apellido</label>
+        <input type="text" id="apellido">
+   </form>
+   <button onclick="mostrar()" >Guardar Cambios</button>
+ <div id="mostrarValores"></div>
+
+ <table id="miTabla" border="1">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+ </table>
+
+    <script>
+        // getElementsByTagName 
+        /*let parrafos = document.getElementsByTagName("p");
+        //console.log(parrafos[2].innerHTML);
+        for(let i=0; i < parrafos.length; i++){
+            console.log(parrafos[i].innerHTML);
+        }
+       console.log(parrafos);
+       Array.from(parrafos).forEach(element => {
+            console.log(element.innerHTML);
+       });*/
+
+       //getElementsByClassName
+      /* let parrafos = document.getElementsByClassName("azul");
+       console.log(parrafos);*/
+
+       /*let parrafos = document.querySelectorAll("p.azul");
+       console.log(parrafos);
+       parrafos.forEach(element => {
+        console.log(element.innerHTML);
+       });*/
+
+       let personas = [];
+       function mostrar(){
+            let formulario  = document.forms['formulario'];
+            console.log(formulario);
+            console.log(formulario['nombre'].value);
+            console.log(formulario['apellido'].value);
+            let persona ={
+                nombre: formulario['nombre'].value,
+                apellido: formulario['apellido'].value
+            }
+            personas.push(persona);
+            refrescarTabla();
+          //  document.getElementById('mostrarValores').innerHTML= formulario['nombre'].value + "<br />" + formulario['apellido'].value;
+       }
+
+       function refrescarTabla(){
+            const tabla = document.querySelector("#miTabla tbody");
+            tabla.innerHTML='';
+
+            personas.forEach(persona =>{
+                const fila = document.createElement("tr");
+                fila.innerHTML = `
+                    <td>${persona.nombre}</td>
+                    <td>${persona.apellido}</td>
+                `;
+            tabla.appendChild(fila);
+            });
+       }
+
+       /* Obtener valores de input sin utilizar document.forms['formulario'];
+       console.log(document.getElementById('nombre').value);
+       console.log(document.getElementById('apellido').value);*/
+
+       /* let fila = document.createElement("tr");
+        fila.innerHTML = "<td>1</td><td>Comedia</td>";
+        document.querySelector("#miTabla tbody").appendChild(fila);*/
+
+
+    </script>
+    
+</body>
+</html>
