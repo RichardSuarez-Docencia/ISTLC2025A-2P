@@ -1,0 +1,16 @@
+<p>padre works!</p>
+<div style="margin: 50px;">
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">Ingrese el primer número:</span>
+    <input [(ngModel)]="numeroA" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  </div>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">Ingrese el segundo número:</span>
+    <input [(ngModel)]="numeroB" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  </div>
+
+  <app-hijo [numeroA]="numeroA" [numeroB]="numeroB" (resultado)="funcionRecibirDatosDeMiHijo($event)"></app-hijo>
+
+  <h2>El resultado es: {{resultado}}</h2>
+</div>

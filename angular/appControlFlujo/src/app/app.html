@@ -1,0 +1,172 @@
+<h1>Calculadora</h1>
+
+<app-padre></app-padre>
+
+<!--
+<div style="margin: 20px;">
+  <h1>Formulario Normal</h1>
+<div class="input-group mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-default">Ingrese su nombre:</span>
+  <input [(ngModel)]="nombre" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-default">Ingrese su edad:</span>
+  <input [(ngModel)]="edad" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+</div>
+
+<button class="btn btn-primary" (click)="agregarEstudiante()">Agregar</button>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Edad</th>
+      <th scope="col">Foto</th>
+      <th scope="col">Acción</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (estudiante of listaEstudiantes; track $index) {
+      <tr>
+        <th scope="row">{{estudiante.id}}</th>
+        <td>{{estudiante.nombre}}</td>
+        <td>{{estudiante.edad}}</td>
+        <td>
+          <img style="width: 30px;" src="{{estudiante.foto}}" alt="">
+        </td>
+        <td>
+          <button class="btn btn-danger" (click)="eliminarEstudiante($index)">Eliminar</button>
+        </td>
+     </tr>
+    }@empty {
+      <p>No hay estudiantes por mostrar.</p>
+      }
+  </tbody>
+</table>
+
+</div>
+-->
+
+
+<!--<h1>Control de flujo</h1>
+<button (click)="presentarConsola()">Mostrar por consola</button>
+
+<div>
+  <h2>Lista de animales</h2>
+  <ul>
+    @for (animal of animales; track $index) {
+      <li>({{$index +1}}) {{animal}}</li>
+    }@empty {
+      <li>No hay animales por mostrar.</li>
+      }
+  </ul>
+</div>
+
+<hr>
+
+<h1>Lista de Estudiantes</h1>
+<ol>
+  @for (estudiante of listaEstudiantes; track $index) {
+    <li>{{$index}} ({{estudiante.id}}) {{estudiante.nombre}} {{estudiante.edad}}</li>
+  }@empty {
+      <li>No hay estudiantes por mostrar.</li>
+      }
+</ol>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Edad</th>
+      <th scope="col">Foto</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (estudiante of listaEstudiantes; track estudiante.id) {
+      <tr>
+        <th scope="row">{{estudiante.id}}</th>
+        <td>{{estudiante.nombre}}</td>
+        <td>{{estudiante.edad}}</td>
+        <td>
+          <img style="width: 30px;" src="{{estudiante.foto}}" alt="">
+        </td>
+     </tr>
+    }@empty {
+      <p>No hay estudiantes por mostrar.</p>
+      }
+  </tbody>
+</table>
+
+
+
+<div *ngFor="let item of animales" >
+    <li>{{ item }}</li>
+</div>
+
+
+<hr>
+<h1>Control Directiva arroba if</h1>
+
+@if(isMayorEdad) {
+  <div class="alert alert-success" role="alert">
+      Sì. es mayor de edad
+  </div>
+}@else {
+  <div class="alert alert-danger" role="alert">
+   Lo siento, pero no es mayor de edad
+</div>
+}
+
+<button (click)="isLoggedFuncion()">Login</button>
+@if(isLoged) {
+  <div class="alert alert-success" role="alert">
+      Ingreso exitoso
+  </div>
+}@else {
+  <div class="alert alert-danger" role="alert">
+   Login incorrecto
+</div>
+}
+
+<h2>*ngIf</h2>
+
+
+
+<hr>
+<h2>arroba switch</h2>
+
+<div>
+  <button class="btn btn-danger" (click)="cambiarColor('rojo')">Rojo</button>
+  <button class="btn btn-warning" (click)="cambiarColor('amarillo')">Amarillo</button>
+  <button class="btn btn-success" (click)="cambiarColor('verde')">Verde</button>
+</div>
+
+<div>
+  @switch(colorActual) {
+    @case ('rojo') {
+      <div class="alert alert-danger" role="alert">
+        <h1>ALTO</h1>
+        <p>No Puedes pasar</p>
+      </div>
+    }
+
+     @case ('amarillo') {
+      <div class="alert alert-warning" role="alert">
+        <h1>PRECAUCIÒN</h1>
+        <p>Preparate para parar</p>
+      </div>
+    }
+
+     @case ('verde') {
+        <div class="alert alert-success" role="alert">
+              <h1>AVANZA</h1>
+              <p>Puedes pasar</p>
+          </div>
+    }
+
+  }
+</div> -->
+

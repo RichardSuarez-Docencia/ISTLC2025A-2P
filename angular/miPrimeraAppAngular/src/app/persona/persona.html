@@ -1,0 +1,29 @@
+<p>persona works!</p>
+<h1>Soy el componente persona</h1>
+
+<p>Mi nombre es <b>{{nombre}}</b></p>
+
+<p>Nombre: {{persona.nombre}}</p>
+<p>Apellido: {{persona.apellido}}</p>
+<p>Edad: {{persona.edad}}</p>
+
+<table style="border: 5px solid blue;">
+  <tr>
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Edad</th>
+    <th>Sueldo</th>
+    <th>Fecha Nacimiento</th>
+  </tr>
+  <tr>
+    <td>{{persona.nombre | uppercase}}</td>
+    <td>{{persona.apellido | lowercase}}</td>
+    <td>{{persona.edad | percent}}</td>
+    <th>{{persona.sueldo | currency:'EUR'}}</th>
+    <th>{{fechaHoy | date:'short'}}</th>
+  </tr>
+</table>
+
+
+
+
